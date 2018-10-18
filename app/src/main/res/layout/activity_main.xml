@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="5dp">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1* Intent Basic Activity"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/btnIntenExlicit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Explicit (Put Extra)"/>
+
+        <Button
+            android:id="@+id/btnIntenExlicit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Explicit (Put Extras)"/>
+
+        <Button
+            android:id="@+id/btnIntenExlicit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="IntentExplicitSimple"
+            android:text="Intent Explicit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2* Intent WebView Activity"
+            android:textSize="28sp"/>
+
+        <Button
+            android:id="@+id/btnWebBrowserSederhana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent 1: Web Browser Sederhana"/>
+
+        <Button
+            android:id="@+id/btnSentURLtoBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent 2: Kirim URL ke Browser"/>
+
+        <Button
+            android:id="@+id/btnSentURLtoTinyBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent 3: Kirim URL ke Tiny Browser"/>
+
+    </LinearLayout>
+
+</LinearLayout>

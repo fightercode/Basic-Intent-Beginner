@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pengenalan Intent: Beginner</string>
+    <string name="_1_intent_explicit_put_extra_1_data">1* Intent Explicit (Put Extra) 1 Data</string>
+    <string name="masukan_nama_mahasiswa">Masukan Nama Mahasiswa</string>
+    <string name="kirim">Kirim</string>
+    <string name="go_to_home_activity">Go To Home Activity</string>
 </resources>
