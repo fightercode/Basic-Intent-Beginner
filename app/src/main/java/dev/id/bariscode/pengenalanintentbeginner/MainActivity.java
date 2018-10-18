@@ -9,7 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btExplicit1, btExplicit2;
-    Button btTinyBrowser, btIntentBrowserwithURL, btIntentTinyBrowserwithURL;
+    Button btTinyBrowser, btIntentBrowserwithURL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         btTinyBrowser = (Button)findViewById(R.id.btnWebBrowserSederhana);
         btIntentBrowserwithURL = (Button)findViewById(R.id.btnSentURLtoBrowser);
-        btIntentTinyBrowserwithURL = (Button)findViewById(R.id.btnSentURLtoTinyBrowser);
 
         btTinyBrowser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,17 +43,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btIntentTinyBrowserwithURL.setOnClickListener(new View.OnClickListener() {
+        btIntentBrowserwithURL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-            }
-        });
-
-        btIntentTinyBrowserwithURL.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+                startActivity(new Intent(MainActivity.this, PutExtratoWebViewActivity.class));
             }
         });
     }

@@ -69,13 +69,8 @@
             android:id="@+id/btnSentURLtoBrowser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Intent 2: Kirim URL ke Browser"/>
-
-        <Button
-            android:id="@+id/btnSentURLtoTinyBrowser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Intent 3: Kirim URL ke Tiny Browser"/>
+            android:gravity="left"
+            android:text="Intent 2: Kirim URL ke Browser dan Tiny Browser"/>
 
     </LinearLayout>
 

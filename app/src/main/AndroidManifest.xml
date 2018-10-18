@@ -23,7 +23,8 @@
         <activity android:name=".IntentExplicit3Activity" />
         <activity android:name=".TampungData1Activity" />
         <activity android:name=".WebViewIntent1Activity" />
-        <activity android:name=".PutExtratoWebViewActivity"></activity>
+        <activity android:name=".PutExtratoWebViewActivity" />
+        <activity android:name=".TinyBrowserActivity"></activity>
     </application>
 
 </manifest>

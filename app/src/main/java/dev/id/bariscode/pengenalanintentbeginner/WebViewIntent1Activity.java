@@ -36,8 +36,6 @@ public class WebViewIntent1Activity extends AppCompatActivity {
 
         final EditText etCari = (EditText)findViewById(R.id.edtSearch);
 
-        Intent getIntent = getIntent();
-
         URL = "https://google.com/";
 
         webViewInitial();
